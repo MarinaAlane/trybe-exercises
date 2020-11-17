@@ -1,1 +1,1 @@
-Exercício sobre commits. 
+Exercício sobre comandos do GitHub
