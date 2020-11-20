@@ -1,0 +1,29 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+
+}
+
+.cores {
+    background-color: peachpuff;
+}
+p {
+    font-weight: 600;
+}
+
+body {
+    font-size:x-large;
+    font-style: unset;
+    text-align: center;
+    text-decoration: beige;
+}
+.Vermelho {
+    background-color: rgb(209, 55, 55);
+}
+.Amarelo {
+    background-color: rgb(247, 247, 107);
+}
+.Marrom {
+    background-color: brown
+}
