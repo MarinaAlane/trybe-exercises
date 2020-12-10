@@ -47,20 +47,32 @@
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
 
 
-    function MeuFuturo(documento) {
-    let center = document.getElementsByClassName('center-content')
-    let texto = center[0].getElementsByTagName("p")
-    texto[1].innerHTML = 'Vou trabalhar num lugar dahora!'
-    }
-      console.log(MeuFuturo(document))
 
- /*Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.*/
-   function AlteraCor()
-  
- /*Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    function firstText(UmaString) {
+      let paragrafo = document.getElementsByTagName('p')[1];
+          paragrafo.innerHTML = UmaString
+    }
+    firstText("Vou trabalhar num lugar dahora e ganhar bem!")
+
+    //2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
+
+    function changeSquareToGreen() {
+      let squareYellow = document.getElementsByClassName('main-content')[0];
+      squareYellow.style.background = "rgb(76,164,109)";
+    }
+    changeSquareToGreen();
+
+    //3. Crie uma função que mude a cor do quadrado vermelho para branco.
+
+       function mudandoACorDoMeio () {
+        let quadradoVermelho = document.getElementsByClassName('center-content')[0]
+        quadradoVermelho.style.background = "white"
+       }
+       mudandoACorDoMeio()
+
+       /* 4. Crie uma função que corrija o texto da tag <h1>.
+        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
   </body>
