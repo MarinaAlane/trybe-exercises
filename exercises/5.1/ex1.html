@@ -70,10 +70,20 @@
        }
        mudandoACorDoMeio()
 
-       /* 4. Crie uma função que corrija o texto da tag <h1>.
-        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
+       //4. Crie uma função que corrija o texto da tag <h1>.
+       function corrigindoTexto () {
+       let titulo = document.getElementsByClassName('title')[0]
+       titulo.innerHTML = "Exercício 5.1 - JavaScript"
+       }
+       corrigindoTexto()
+        //5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+         function tudoMaiusculo ()  {
+        let textoMaiusculo = document.getElementsByTagName('p')[1]
+        textoMaiusculo.innerHTML = textoMaiusculo.innerHTML.toUpperCase()
+         }
+          tudoMaiusculo()
+        //6. Crie uma função que exiba o conteúdo de todas as tags <p> no console. 
+        
     </script>
   </body>
 </html>
