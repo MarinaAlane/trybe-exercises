@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+           // EX 1
+    let titulo = document.createElement('h1')
+    titulo.innerHTML = "Ex 1" 
+    document.body.appendChild(titulo)
+
+        // EX 2
+    let container = document.createElement('div')
+    container.className = "main-content"
+    document.body.appendChild(container)  // caminho onde o elemento vai percorrer até o lugar que deve ficar
+
+             //EX 3
+    let centerc = document.createElement('div')
+    centerc.className = "center-content"
+    container.appendChild(centerc)    // nome do elementoPai, a função e o elemento filho.
+
+              //EX 4
+    let paragrafo1 = document.createElement('p')
+    paragrafo1.innerHTML = "TEXTO AQUI"
+    centerc.appendChild(paragrafo1)
+
+              //EX 5
+    let divDoPassoDois = document.createElement('div')
+    divDoPassoDois.className = "left-content" 
+    container.appendChild(divDoPassoDois)
+
+              //EX6
+    let segundoFilhoPassoDois = document.createElement('div')
+    segundoFilhoPassoDois.className = "right-content"
+    container.appendChild(segundoFilhoPassoDois)
+
+              //EX 7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+
+      
+              //EX 8  Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6 
+
+
+              //9 Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2 
+    
+
+
+
+    </script>
+  </body>
+</html>
