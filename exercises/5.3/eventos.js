@@ -75,3 +75,15 @@ function colorHolliday () {
   })
 }
 colorHolliday()
+
+function FridayButton(nameButton) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButtonFriday = document.createElement('button');
+  let newButtonID = 'btn-friday';
+
+  newButtonFriday.innerHTML = nameButton;
+  newButtonFriday.id = newButtonID;
+  buttonContainer.appendChild(newButtonFriday);
+}
+
+FridayButton('Sexta-feira')
