@@ -44,3 +44,34 @@ function createDaysOfTheMonth() {
   };
 };
 createDaysOfTheMonth();
+
+function createHolidayButton(buttonName) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+  let newButtonID = 'btn-holiday';
+
+  newButton.innerHTML = buttonName;
+  newButton.id = newButtonID;
+  buttonContainer.appendChild(newButton);
+};
+
+createHolidayButton('Feriados');
+
+function colorHolliday () {
+  let botaoFeriado = document.querySelector('#btn-holiday');
+  let osFeriados = document.querySelectorAll('.holiday');
+  let corNormal = 'rgb(238,238,238)';
+  let corDiferente = 'white';
+
+  botaoFeriado.addEventListener('click', function() {
+  
+  for ( let i = 0; i < osFeriados.length ; i += 1) {
+    if (osFeriados[i].style.backgroundColor === corDiferente) {
+        osFeriados[i].style.backgroundColor = corNormal
+    } else {
+      osFeriados[i].style.backgroundColor = corDiferente; 
+    }
+  }
+  })
+}
+colorHolliday()
