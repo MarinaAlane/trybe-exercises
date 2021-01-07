@@ -9,23 +9,29 @@
   <h1>Formulário - Curriculo</h1>
   <form action="" method="GET"></form>
   <fieldset>
-  <label>Nome completo:</label>
+  <label for="nomecompleto">Nome completo:</label>
     <input type="text" name="name" id="name" maxlength="40" placeholder="Seu nome aqui" required>
   <br>
-    <label>E-mail:</label>
+    <label for="email">E-mail:</label>
       <input type="email" name="email" id="email" maxlength="50" placeholder="Seu e-mail aqui" required>
   <br>
-    <label>CPF:</label>
+    <label for="cpf">CPF:</label>
       <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Seu CPF aqui" required>
   <br>
-    <label>Endereço:</label>
+    <label for="endereco">Endereço:</label>
       <input type="text" name="endereco" id="endereco" maxlength="200" placeholder="Seu endereço aqui" required>
   <br>
-    <label>Cidade:</label>
+    <label for="cidade">Cidade:</label>
       <input type="text" name="cidade" id="cidade" maxlength="28" placeholder="Sua cidade aqui" required>
+<br>
+      <label for="states">Estado:</label>
+      <select name="estados" id="states" value="" required>
+      </select>
+
 <br>
 
 </fieldset>
   <br>
 </body>
+<script src="script.js"></script>
 </html>
