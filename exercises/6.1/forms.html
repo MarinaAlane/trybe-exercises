@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="bulma.css">
   <title>Formulário - Curriculo</title>
 </head>
 <body>
-  <h1>Formulário - Curriculo</h1>
+  <h1 class="container notification is-primary" >Formulário - Curriculo</h1>
   <form action="" method="GET"></form>
   <fieldset>
   <label for="nomecompleto">Nome completo:</label>
-    <input type="text" name="name" id="name" maxlength="40" placeholder="Seu nome aqui" required>
+    <input type="text" name="name" id="name" class="control is-expanded"  maxlength="40" placeholder="Seu nome aqui" required>
   <br>
     <label for="email">E-mail:</label>
-      <input type="email" name="email" id="email" maxlength="50" placeholder="Seu e-mail aqui" required>
+      <input type="email" name="email" id="email" class="control is-expanded" maxlength="50" placeholder="Seu e-mail aqui" required>
   <br>
     <label for="cpf">CPF:</label>
-      <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Seu CPF aqui" required>
+      <input type="text" name="cpf"  id="cpf" maxlength="11" cclass="control is-expanded"placeholder="Seu CPF aqui" required>
   <br>
     <label for="endereco">Endereço:</label>
-      <input type="text" name="endereco" id="endereco" maxlength="200" placeholder="Seu endereço aqui" required>
+      <input type="text" name="endereco" id="endereco" class="control is-expanded" maxlength="200" placeholder="Seu endereço aqui" required>
   <br>
     <label for="cidade">Cidade:</label>
-      <input type="text" name="cidade" id="cidade" maxlength="28" placeholder="Sua cidade aqui" required>
+      <input type="text" name="cidade" id="cidade" class="control is-expanded" maxlength="28" placeholder="Sua cidade aqui" required>
   <br>
     <label for="states">Estado:</label>
       <select name="estados" id="states" value="" required>
@@ -37,7 +37,7 @@
 <br>
  <fieldset>
    <label>Resumo do Curriculo</label>
-  <textarea id="cv-res" name="cv-res" maxlength="1000" cols="100" rows="20" placeholder="Coloque aqui um breve resumo do seu currículo" required></textarea>
+  <textarea id="cv-res" name="cv-res" class="textarea is-info textarea " maxlength="1000" placeholder="Coloque aqui um breve resumo do seu currículo" required></textarea>
   <br>
     <label for="cargo">Cargo:</label>
     <input type="text" name="cargo" id="cargo" maxlength="40" placeholder="Seu cargo" required>
@@ -49,7 +49,7 @@
       <input type="text" name="date" id="date-init" placeholder="dd/mm/aaaa" required> 
    
  </fieldset>
-    <input type="button" value="Enviar" id="date"class="btn btn-secondary btn-lg" >
+    <input type="button" value="Enviar" id="date" class="button is-success">
 </body>
 <script src="script.js"></script>
 </html>
