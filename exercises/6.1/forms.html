@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
   <title>Formulário - Curriculo</title>
 </head>
 <body>
@@ -23,15 +24,32 @@
   <br>
     <label for="cidade">Cidade:</label>
       <input type="text" name="cidade" id="cidade" maxlength="28" placeholder="Sua cidade aqui" required>
-<br>
-      <label for="states">Estado:</label>
+  <br>
+    <label for="states">Estado:</label>
       <select name="estados" id="states" value="" required>
       </select>
-
+      <input type="radio" name="tipo" id="tipo" required>
+        <label for="tipo">Apartamento</label>
+      <input type="radio" name="tipo" id="tipo" required>
+        <label for="tipo">Casa</label>
 <br>
-
 </fieldset>
+<br>
+ <fieldset>
+   <label>Resumo do Curriculo</label>
+  <textarea id="cv-res" name="cv-res" maxlength="1000" cols="100" rows="20" placeholder="Coloque aqui um breve resumo do seu currículo" required></textarea>
   <br>
+    <label for="cargo">Cargo:</label>
+    <input type="text" name="cargo" id="cargo" maxlength="40" placeholder="Seu cargo" required>
+  <br>
+    <label for="cargo-des"> Descrição do cargo:</label>
+    <input type="text" name="cargo-des" id="cargo-des" maxlength="500" placeholder="Descrição de seu cargo" required>
+  <br>
+    <label for="date-init">Data de início:</label>
+      <input type="text" name="date" id="date-init" placeholder="dd/mm/aaaa" required> 
+   
+ </fieldset>
+    <input type="button" value="Enviar" id="date"class="btn btn-secondary btn-lg" >
 </body>
 <script src="script.js"></script>
 </html>
