@@ -1,0 +1,56 @@
+
+
+.trybe-logo {
+ max-width: 50px;
+ max-height: 50px;
+ 
+}
+
+.header-site {
+display: flex;
+justify-content: space-around;
+background-color: #575757;
+color: aliceblue;
+max-height:50px;
+flex-wrap: wrap;
+}
+
+.header-text {
+  display: flex;
+  }
+  
+  .signup {
+    display: flex;
+    margin-left: 380px;
+  }
+
+.text-section {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  
+}
+
+.html-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.js-img .footer{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.footer {
+  display:flex;
+  max-height:50px;
+  justify-content: center;
+
+}
