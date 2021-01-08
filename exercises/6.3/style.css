@@ -1,6 +1,4 @@
-*{
-  margin: 0;
-}
+
 
 .trybe-logo {
  max-width: 50px;
@@ -15,7 +13,6 @@ background-color: #575757;
 color: aliceblue;
 max-height:50px;
 flex-wrap: wrap;
-
 }
 
 .header-text {
@@ -46,7 +43,14 @@ margin-top: 10px;
   max-height: 150px;
 }
 
-.js-img {
+.js-img .footer{
   max-width: 150px;
   max-height: 150px;
+}
+
+.footer {
+  display:flex;
+  max-height:50px;
+  justify-content: center;
+
 }
