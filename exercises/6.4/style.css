@@ -75,6 +75,7 @@ body {
   margin: 10px;
   flex-basis: 16%;
   flex-grow: 10;
+
 }
 
 .aside-container {
@@ -82,14 +83,19 @@ body {
   flex-direction: column;
   margin: 20px;
   flex-basis: 350px;
+  justify-content: center;
+
 }
 
 .aside-container h3, h4 {
   margin-bottom: 10px;
   text-align: center;
+
 }
 
 .aside-container p {
   margin: 10px 0;
   text-align: justify;
+  justify-content: center;
+  display: flex;
 }
