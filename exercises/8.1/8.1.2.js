@@ -74,8 +74,19 @@ function smallerName() {
     }
     }); 
 
+<<<<<<< Updated upstream:exercises/8.1/8.1.2.js
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
 
 assert.strictEqual(smallerName(), 'Duna');
+=======
+function formatedBookNames() {
+ return books.map(obj => `${obj.name} - ${obj.genre} - ${obj.author.name}`)
+}
+
+// for (let i = 0; i < books.length; i += 1){
+//   console.log(books[i].name)
+
+assert.deepStrictEqual(formatedBookNames(), expectedResult);
+>>>>>>> Stashed changes:exercises/8.2/8.2.1.js

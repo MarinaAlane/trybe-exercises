@@ -74,9 +74,14 @@ const expectedResult = {
   releaseYear: 1991
 };
 
+<<<<<<< Updated upstream:exercises/8.1/8.1.3.js
 // Encontre o primeiro livro cujo nome possui 26 caracteres.
 function getNamedBook() {
   return books.find((book)=> book.name.length === 26)
+=======
+function nameAndAge() {
+ 
+>>>>>>> Stashed changes:exercises/8.2/8.2.2.js
 }
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);
