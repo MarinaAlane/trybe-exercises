@@ -94,7 +94,17 @@ const expectedResult = [
 // Dica: use as funções map , sort
 
 function nameAndAge() {
-  // escreva seu código aqui
-}
+  // transformar/gerar um novo array de objetos com base no array de livros
+  // Ordenar o novo array com base nas idades dos autores qnd o livro foi lançado
+  // estrutura: { author : "nome da pessoa", age: 10}
 
+  return books
+  .map(book => ({
+    author: book.author.name,
+    age: book.releaseYear - book.author.birthYear
+  })).sort((elementA, elemetentB)=> elementA.age - elemetentB.age)
+  
+  
+}
+// qnd usar obj em return de arrow, colocar parenteses ao redor do obj.
 assert.deepStrictEqual(nameAndAge(), expectedResult);
