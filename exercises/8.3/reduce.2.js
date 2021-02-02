@@ -1,3 +1,4 @@
+
 const assert = require('assert');
 
 const books = [
@@ -63,20 +64,12 @@ const books = [
   },
 ];
 
-const expectedResult = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin'
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991
-};
 
-// Encontre o primeiro livro cujo nome possui 26 caracteres.
-function getNamedBook() {
-  return books.find((book)=> book.name.length === 26)
+function allNames() {
+ // Crie uma string com os nomes de todas as pessoas autoras.
+ return books.reduce((book) => book.author.name)
+
+
 }
 
-assert.deepStrictEqual(getNamedBook(), expectedResult);
+assert.deepStrictEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
