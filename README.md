@@ -9,6 +9,7 @@
 * 3.4 - Semantic HTML;
 * 4.1 - Introduction to JavaScript;
 * 4.2 - JS Getting Started : 
+
       * Constants.
       
       * Primitive types.
