@@ -1,6 +1,6 @@
 <h1>Fundamentals of web development 
 
-<h3>Exercises done during Fundamentals of Web Development section :pencil2:	:books:	 </h3>
+<h3>Fundamentals of Web Development exercises :pencil2:	:books:	 </h3>
 
 
 * 2.1 - Executing first and main Git / GitHub commands;
